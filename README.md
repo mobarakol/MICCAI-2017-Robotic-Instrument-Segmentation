@@ -5,17 +5,11 @@ This repository contains the code to plot the bounding box from xml. We have ann
 The diagonal coordinates of each instruments are store in the xml inlcuding instrument name. An example of the xml [xml](https://github.com/mobarakol/MICCAI-2017-Robotic-Instrument-Segmentation/blob/master/instrument_dataset_1/xml/frame000.xml) structure
 
 <p align="center">
-<img align='center' style="border-color:gray;border-width:2px;border-style:dashed"   src='instrument_dataset_1/images/frame000.jpg' padding='5px' height="400px"></img>
-</p>
-<p align="center">
-<img align='center' style="border-color:gray;border-width:2px;border-style:dashed"   src='frame000.jpg' padding='5px' height="400px"></img>
-</p> 
-
 <p float="left">
-  <img src="instrument_dataset_1/images/frame000.jpg" width="200" />
-  <img src="frame000.jpg" width="200" /> 
+  <img src="instrument_dataset_1/images/frame000.jpg" width="300" />
+  <img src="frame000.jpg" width="300" /> 
 </p>
-
+</p> 
 ## xml structure
 ```
 <annotation>
