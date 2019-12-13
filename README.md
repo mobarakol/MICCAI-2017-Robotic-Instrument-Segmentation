@@ -11,6 +11,11 @@ The diagonal coordinates of each instruments are store in the xml inlcuding inst
 <img align='center' style="border-color:gray;border-width:2px;border-style:dashed"   src='frame000.jpg' padding='5px' height="400px"></img>
 </p> 
 
+<p float="left">
+  <img src="instrument_dataset_1/images/frame000.jpg" width="200" />
+  <img src="frame000.jpg" width="200" /> 
+</p>
+
 ## xml structure
 ```
 <annotation>
