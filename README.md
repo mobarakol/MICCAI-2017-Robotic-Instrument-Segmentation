@@ -15,7 +15,7 @@ The diagonal coordinates of each instruments are store in the xml inlcuding inst
 ```
 <annotation>
  <folder>instruments_mask</folder>
- <filename>Train_req/instrument_dataset_1/instruments_masks/frame000.png
+ <filename>instrument_dataset_1/instruments_masks/frame000.png
  </filename>
  <objects>
   <name>Prograsp Forceps</name>
