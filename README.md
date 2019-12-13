@@ -48,26 +48,26 @@ The diagonal coordinates of each instruments are store in the xml inlcuding inst
 
 ## Code
 ```
- _img_orig = Image.open(img_name).convert('RGB')
-    img  = cv2.imread(img_name)
-    _xml_dir = os.path.dirname(os.path.dirname(img_name)) + 'xml/' + os.path.basename(img_name[:-4]) + '.xml'
-    _xml = ET.parse(_xml_dir).getroot()
-    class_to_ind = dict(zip(INSTRUMENT_CLASSES, range(len(INSTRUMENT_CLASSES))))
-    
-    for obj in _xml.iter('objects'):
-        name = obj.find('name').text.strip()
-        bbox = obj.find('bndbox')
-        bbox_col = INSTRUMENT_CLASSES.index(str(name)) - 1;
-        pts = ['xmin', 'ymin', 'xmax', 'ymax']
-        bndbox = []
-        label_idx = class_to_ind[name]
-        for i, pt in enumerate(pts):         
-            cur_pt = int(bbox.find(pt).text)
-            bndbox.append(cur_pt)
-            
-        top_corner, down_corner = (int(bndbox[0]), int(bndbox[1])), (int(bndbox[2]), int(bndbox[3]))
-        cv2.rectangle(img, top_corner, down_corner, color_mode[bbox_col], thickness=4)
-        cv2.putText(img,str(name),(top_corner[0]+5, top_corner[1]+25), font, 1,color_mode[bbox_col],1,cv2.LINE_AA)       
-        plt.imshow(img[:,:,::-1])
-        plt.imsave(os.path.basename(img_name), img[:,:,::-1])
+_img_orig = Image.open(img_name).convert('RGB')
+img  = cv2.imread(img_name)
+_xml_dir = os.path.dirname(os.path.dirname(img_name)) + 'xml/' + os.path.basename(img_name[:-4]) + '.xml'
+_xml = ET.parse(_xml_dir).getroot()
+class_to_ind = dict(zip(INSTRUMENT_CLASSES, range(len(INSTRUMENT_CLASSES))))
+
+for obj in _xml.iter('objects'):
+    name = obj.find('name').text.strip()
+    bbox = obj.find('bndbox')
+    bbox_col = INSTRUMENT_CLASSES.index(str(name)) - 1;
+    pts = ['xmin', 'ymin', 'xmax', 'ymax']
+    bndbox = []
+    label_idx = class_to_ind[name]
+    for i, pt in enumerate(pts):         
+        cur_pt = int(bbox.find(pt).text)
+        bndbox.append(cur_pt)
+
+    top_corner, down_corner = (int(bndbox[0]), int(bndbox[1])), (int(bndbox[2]), int(bndbox[3]))
+    cv2.rectangle(img, top_corner, down_corner, color_mode[bbox_col], thickness=4)
+    cv2.putText(img,str(name),(top_corner[0]+5, top_corner[1]+25), font, 1,color_mode[bbox_col],1,cv2.LINE_AA)       
+    plt.imshow(img[:,:,::-1])
+    plt.imsave(os.path.basename(img_name), img[:,:,::-1])
 ```
