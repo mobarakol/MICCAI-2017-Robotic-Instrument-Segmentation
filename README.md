@@ -2,13 +2,12 @@
 
 This repository contains the code to plot the bounding box from xml. We have annotated bounding box for the [MICCAI Surgical Instrument Segmentation Challenge 2017](https://endovissub2017-roboticinstrumentsegmentation.grand-challenge.org/) dataset for the instruments.
 
-The diagonal coordinates of each instruments are store in the xml inlcuding instrument class. An example of the xml [xml](https://github.com/mobarakol/MICCAI-2017-Robotic-Instrument-Segmentation/blob/master/instrument_dataset_1/xml/frame000.xml) structure
-
-
 <p float="center">
   <img src="instrument_dataset_1/images/frame000.jpg" width="350" />
   <img src="frame000.jpg" width="350" /> 
 </p>
+
+The diagonal coordinates of each instruments are store in the xml inlcuding instrument class. An example of the xml [xml](https://github.com/mobarakol/MICCAI-2017-Robotic-Instrument-Segmentation/blob/master/instrument_dataset_1/xml/frame000.xml) structure-
 
 
 ## xml structure
