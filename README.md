@@ -1,4 +1,4 @@
-# MICCAI-2017-Robotic-Instrument-Segmentation
+# Bounding Box for MICCAI-2017-Robotic-Instrument-Segmentation
 
 This repository contains the code to plot the bounding box from xml. We have annotated bounding box for the [MICCAI Surgical Instrument Segmentation Challenge 2017](https://endovissub2017-roboticinstrumentsegmentation.grand-challenge.org/) dataset for the instruments.
 
