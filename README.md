@@ -79,7 +79,7 @@ If you use this dataset for your research, please cite our paper.
 @inproceedings{islam2019learning,
   title={AP-MTL: Attention Pruned Multi-Task Learning Model for Real-Time Instrument Detection and Segmentation in Robot-Assisted Surgery},
   author={Islam, Mobarakol and Vs, Vibashan and Ren, Hongliang},
-  booktitle={IEEE International Conference on Robotics and Automation},
+  booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
   pages={***--***},
   year={2020}
 }
