@@ -1,5 +1,5 @@
 # Bounding Box for MICCAI-2017-Robotic-Instrument-Segmentation Dataset
-
+Full source code is available here:[AP-MTL](https://github.com/mobarakol/AP-MTL) <br>
 This repository contains the code to plot the bounding box from xml. We have annotated bounding box for the [MICCAI Surgical Instrument Segmentation Challenge 2017](https://endovissub2017-roboticinstrumentsegmentation.grand-challenge.org/) dataset for the instruments.
 
 The dataset is used to design a joint detection and segmentation method of Multitask learning (MTL) model for surgical instrument tracking. The paper [AP-MTL: Attention Pruned Multi-task Learning Model for Real-time Instrument Detection and Segmentation in Robot-assisted Surgery](https://ras.papercept.net/proceedings/ICRA20/3432.pdf/) is presenting in [ICRA 2020](https://www.icra2020.org/) conference. 
